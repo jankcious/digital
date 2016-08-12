@@ -16,6 +16,7 @@ import imaplib
 import os
 from collections import defaultdict, Counter
 import platform
+from gmailsecret import password, userName
 
 fileNameCounter = Counter()
 fileNameHashes = defaultdict(set)
@@ -127,8 +128,6 @@ def SaveAttachmentsFromMailMessage(message, directory):
 
 if __name__ == '__main__':
     resumeFile = file_path = os.path.join('resume.txt')
-    userName = 'jason.becker86@gmail.com'
-    password = 'vzigsqiwzfvmnlsy'
     recover(resumeFile)
     if 'attachments' not in os.listdir(os.getcwd()):
         os.mkdir('attachments')
