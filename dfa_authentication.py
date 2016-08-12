@@ -5,8 +5,7 @@ from oauthlib import oauth2
 
 # Your OAuth 2.0 Client ID and Secret. If you do not have an ID and Secret yet,
 # please go to https://console.developers.google.com and create a set.
-CLIENT_ID = '764995533921-koh5npjud7so21lpi844l4c6v8ulpdtt.apps.googleusercontent.com'
-CLIENT_SECRET = '4vAv2EdlV5hNy8TGI6d9xHrW'
+from gmailsecret import CLIENT_ID, CLIENT_SECRET
 
 # You may optionally provide an HTTPS proxy.
 HTTPS_PROXY = None
